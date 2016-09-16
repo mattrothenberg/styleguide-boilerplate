@@ -5,8 +5,8 @@ name: button
 category: Base CSS
 ---
 
-Button styles can be applied to any element. Typically you'll want to
-use either a `<button>` or an `<a>` element:
+Button styles can be applied to any element or can they. Typically you'll want to
+use either a `<button>` or an `<a>` fooptest
 
 ```html_example
 <button class="btn btnDefault">Click</button>
@@ -32,56 +32,3 @@ Button                                                            | Modifier Cla
 <button class="btn btnDefault btnFullWidth">Full width</button>   | `btn btnDefault btnFullWidth`
 
 */
-
-button {
-  background: none;
-  border: 0;
-}
-
-/* Base button */
-.btn {
-  padding: .5em 1em;
-  margin: 0;
-  display: inline-block;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 14px;
-  font-size: 0.875rem;
-  text-decoration: none;
-  cursor: pointer;
-  border: 0;
-  background: none;
-  text-align: center;
-  border: 1px solid #cccccc;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-
-/* Button sizes */
-.btnSml {
-  font-size: 10px;
-  font-size: 0.625rem;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.btnLrg {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.6;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.btnFullWidth {
-  width: 100%;
-}

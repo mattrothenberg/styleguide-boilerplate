@@ -1,0 +1,64 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.side-nav {
+  background: #008FED;
+  display: block;
+  padding: 25px 0;
+}
+
+@media(min-width: 768px) {
+  .side-nav {
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 275px;
+    z-index: 100;
+  }
+}
+
+.styleguide-content {
+  margin: 0;
+  padding: 25px;
+}
+
+@media(min-width: 768px) {
+  .styleguide-content {
+    margin-left: 275px;
+    padding: 25px 50px;
+  }
+}
+
+.btn-nav {
+  background: transparent;
+  color: white;
+  font-weight: 500;
+  text-align: left;
+  transition: color .2s ease-out,
+              background .2s ease-out;
+}
+
+.btn-nav:hover {
+  background-color: rgba(255, 255, 255, .15);
+  color: #fff;
+}
+
+.btn-nav:focus {
+  box-shadow: none;
+}
+
+.icon-heart {
+  height: 18px;
+  width: 18px;
+  vertical-align: top;
+}

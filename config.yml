@@ -1,7 +1,7 @@
 # Hologram config
 
 # The directory containing the source files to parse
-source: ./components
+source: ./styles
 
 # The directory that hologram will build to
 destination: ./docs

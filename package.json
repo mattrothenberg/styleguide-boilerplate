@@ -1,0 +1,30 @@
+{
+  "name": "labs-design-styleguide-starter",
+  "version": "1.0.0",
+  "description": "A starter project for spinning up a living styleguide",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trulia/hologram-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trulia/hologram-example/issues"
+  },
+  "homepage": "https://github.com/trulia/hologram-example#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

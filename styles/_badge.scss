@@ -1,5 +1,27 @@
 /*doc
 ---
+title: Badges
+name: badge
+category: Components
+---
+
+Badges are a way to display a small amount of text or an image within a
+nicely formatted box. tho
+
+*/
+.badgeStandard, .badgePrimary, .badgeSecondary {
+  border-radius: 3px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  padding: 0.35714em 0.42857em 0.21429em;
+  display: inline-block;
+  color: white;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/*doc
+---
 title: Badge Colors
 parent: badge
 name: badgeSkins
