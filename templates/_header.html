@@ -20,30 +20,38 @@
     <!-- CSS to be documented -->
     <link rel="stylesheet" href="build/css/style.css">
 
-    <!-- component js and init scripts -->
-    <!-- <script src="build/script/components.js"></script> -->
-
 </head>
   <body>
     <nav class="side-nav">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12">
-            <h1 class="h3 em-mid type-light mtn mbs">Acme Inc.</h1>
-            <h2 class="h4 em-normal type-light mvn">Front-end styleguide</h2>
+            <div class="media">
+              <div class="media-body media-middle">
+                <h1 class="h3 em-mid type-light mtn mbs">Acme Inc.</h1>
+                <h2 class="h4 em-normal type-light mvn">Front-end styleguide</h2>
+              </div>
+              <div class="media-right media-middle">
+                <button id="menuToggle" class="btn btn-hamburger visible-xs">
+                  <svg class="hamburger" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M19,33h62c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2,0.896-2,2S17.896,33,19,33z"/><path d="M19,53h62c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2,0.896-2,2S17.896,53,19,53z"/><path d="M19,73h62c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2,0.896-2,2S17.896,73,19,73z"/></svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <ul class="list-unstyled mtxl">
-              <li><a class="btn btn-block btn-nav mvl <%= 'active' if title.length == 0 %>" href="index.html">Intro</a></li>
-              <li><a class="btn btn-block btn-nav mvl <%= 'active' if title == 'colors' %>" href="colors.html">Colors</a></li>
-              <li><a class="btn btn-block btn-nav mvl" href="components.html">Typography</a></li>
-              <li><a class="btn btn-block btn-nav mvl" href="javascript.html">Colors</a></li>
-              <li><a class="btn btn-block btn-nav mvl" href="javascript.html">Forms</a></li>
-            </ul>
+        <nav class="category-navigation">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="list-unstyled">
+                <li><a class="btn btn-block btn-nav mvl <%= 'active' if title.length == 0 %>" href="index.html">Intro</a></li>
+                <li><a class="btn btn-block btn-nav mvl <%= 'active' if title == 'colors' %>" href="colors.html">Colors</a></li>
+                <li><a class="btn btn-block btn-nav mvl" href="components.html">Typography</a></li>
+                <li><a class="btn btn-block btn-nav mvl" href="javascript.html">Colors</a></li>
+                <li><a class="btn btn-block btn-nav mvl" href="javascript.html">Forms</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </nav>
       </div>
     </nav>
 

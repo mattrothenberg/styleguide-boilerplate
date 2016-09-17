@@ -1,4 +1,4 @@
-#Welcome
+<h1 class="styleguide">Welcome</h1>
 
 This style guide is an example of what [hologram](http://trulia.github.io/hologram)  can help you build and maintain.
 
