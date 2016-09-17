@@ -43,4 +43,4 @@ gulp.task('html', function () {
 });
 
 
-gulp.task('default', ['connect', 'watch', ])
+gulp.task('default', ['sass', 'hologram', 'connect', 'watch', ])

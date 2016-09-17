@@ -8,3 +8,20 @@ p.styleguide {
   font-size: 1.35em;
   line-height: 1.4;
 }
+
+h1.styleguide {
+	color: #4b4b4b;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 0 10px;
+}
+
+h1.styleguide:after {
+	background: #eee;
+	content: '';
+	display: block;
+	height: 4px;
+	margin: 10px 0 .75em;
+	width: 50px;
+}
+

@@ -48,8 +48,11 @@ body {
               background .2s ease-out;
 }
 
+.btn-nav.active,
+.btn-nav:visited,
 .btn-nav:hover {
   background-color: rgba(255, 255, 255, .15);
+  box-shadow: none;
   color: #fff;
 }
 
