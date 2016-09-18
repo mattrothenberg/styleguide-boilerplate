@@ -140,6 +140,7 @@ footer {
 
 .section-nav li {
   display: inline-block;
+  margin: 0 10px 0 0;
 }
 
 .section-nav li a {
