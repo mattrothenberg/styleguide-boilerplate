@@ -25,7 +25,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', function(){
-  gulp.watch(['./styles/*.scss'], ['sass', 'hologram', 'html']);
+  gulp.watch(['./styles/*'], ['sass', 'hologram', 'html']);
   gulp.watch(['./docs/*.html', './templates/*.html'], ['html']);
   gulp.watch(['./templates/**/*', './styles/*.md'], ['hologram', 'html']);
 });

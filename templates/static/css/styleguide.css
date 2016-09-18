@@ -131,3 +131,20 @@ footer {
   width: 18px;
   vertical-align: top;
 }
+
+.section-nav {
+  list-style-type: none;
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+.section-nav li {
+  display: inline-block;
+}
+
+.section-nav li a {
+  letter-spacing: .5pt;
+  font-weight: 500;
+  padding: 10px 0;
+  text-transform: uppercase;
+}

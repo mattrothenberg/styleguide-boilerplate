@@ -1,0 +1,64 @@
+/*doc
+---
+title: Tables
+name: tables
+category: components
+---
+
+Green juice vaporware echo park, craft beer lyft tattooed sustainable. Meh skateboard seitan lumbersexual typewriter, flannel art party swag gluten-free blue bottle disrupt forage tacos thundercats chillwave.
+
+*/
+
+/*doc
+
+
+```html_example
+---
+title: User Table
+parent: tables
+name: userTable
+category: components
+---
+
+<table class="table table-hover table-users">
+  <thead>
+    <tr>
+      <th>Photo</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="table-cell-photo"><img src="http://placecage.com/50/50" class="img-circle"/></td>
+      <td>Jane</td>
+      <td>Doe</td>
+      <td>jdoe123</td>
+    </tr>
+    <tr>
+      <td class="table-cell-photo"><img src="http://placecage.com/55/55" class="img-circle"/></td>
+      <td>John</td>
+      <td>Smith</td>
+      <td>jsmith123</td>
+    </tr>
+  </tbody>
+</table>
+```
+*/
+
+.table-users {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 0 0 #ddd;
+  font-size: 1.25em;
+
+  tbody tr td {
+    vertical-align: middle;
+  }
+}
+
+.table-cell-photo {
+  img {
+    max-width: 50px;
+  }
+}

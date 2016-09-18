@@ -26,8 +26,12 @@ p.styleguide {
 h1.styleguide {
   color: #4b4b4b;
   font-weight: normal;
-  margin: 0;
+  margin: 1.25em 0 0;
   padding: 0 0 10px;
+}
+
+h1.styleguide:first-of-type {
+  margin: 0;
 }
 
 h1.styleguide:after {
