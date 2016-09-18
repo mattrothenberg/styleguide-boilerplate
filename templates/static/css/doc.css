@@ -4,27 +4,41 @@
   max-width: 100%;
 }
 
+.codeTable table th,
+.codeTable table td {
+  border-top: 1px solid #ddd;
+  font-weight: inherit;
+  line-height: 1.42857143;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+p.lead {
+  font-weight: normal;
+}
+
 p.styleguide {
   font-size: 1.35em;
   line-height: 1.4;
+  margin: 0 0 1.5em;
 }
 
 h1.styleguide {
-	color: #4b4b4b;
-	font-weight: normal;
-	margin: 0;
-	padding: 0 0 10px;
+  color: #4b4b4b;
+  font-weight: normal;
+  margin: 0;
+  padding: 0 0 10px;
 }
 
 h1.styleguide:after {
-	background: #eee;
-	content: '';
-	display: block;
-	height: 4px;
-	margin: 10px 0 .75em;
-	width: 50px;
+  background: #eee;
+  content: '';
+  display: block;
+  height: 4px;
+  margin: 10px 0 .5em;
+  width: 50px;
 }
 
 .codeBlock {
-	margin: 10px 0 0;
+  margin: 10px 0 0;
 }

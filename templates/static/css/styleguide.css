@@ -8,6 +8,13 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 100px;
+}
+
+@media(min-width: 768px) {
+  body {
+    padding: 0;
+  }
 }
 
 .side-nav {
