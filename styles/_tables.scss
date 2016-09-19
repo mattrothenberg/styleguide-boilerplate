@@ -16,7 +16,10 @@ category: components
 ---
 
 Add the `hunky-dory` class to sparklines indicating happy, positive events.
+<br>
 Add the `death-and-glory` class to sparklines indicating, well, just that!
+<br>
+Add the contextual class `danger` to any `<tr>` to add a red, visual callout.
 
 ```html_example
 <table class="table table-acme table-metrics">

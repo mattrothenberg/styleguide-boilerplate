@@ -28,4 +28,10 @@ $colors: (
   .bg-#{$color-name} {
     background-color: $color-hex;
   }
+
+  .text-#{$color-name} {
+    color: $color-hex;
+  }
 }
+
+$screen-sm-min: 768px;
