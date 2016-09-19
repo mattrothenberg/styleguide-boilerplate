@@ -22,38 +22,40 @@ Add the `death-and-glory` class to sparklines indicating, well, just that!
 Add the contextual class `danger` to any `<tr>` to add a red, visual callout.
 
 ```html_example
-<table class="table table-acme table-metrics">
-  <thead>
-    <tr>
-      <th>Source</th>
-      <th>Date</th>
-      <th>Data</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Main Reactor</td>
-      <td>9/18/2016</td>
-      <td class="table-cell-sparkline">
-        <svg class="sparkline hunky-dory" viewBox="0 0 100 20"><path d="M0 7.70 L 0 7.70 L 7 13.42 L 14 16.00 L 21 5.78 L 28 12.76 L 35 3.42 L 42 6.80 L 49 7.65 L 56 7.47 L 63 5.98 L 70 4.93 L 77 0.00" fill="none"></path><path d="M0 7.70 L 0 7.70 L 7 13.42 L 14 16.00 L 21 5.78 L 28 12.76 L 35 3.42 L 42 6.80 L 49 7.65 L 56 7.47 L 63 5.98 L 70 4.93 L 77 0.00 V 16 L 0 16 Z" stroke="none"></path></svg>
-      </td>
-    </tr>
-    <tr class="danger">
-      <td>Thermonuclear Core</td>
-      <td>9/18/2016</td>
-      <td class="table-cell-sparkline">
-        <svg class="sparkline death-and-glory" viewBox="0 0 100 20"><path d="M0 1.07 L 0 1.07 L 1 0.45 L 2 0.00 L 3 1.12 L 4 1.33 L 5 2.48 L 6 3.44 L 7 3.52 L 8 3.81 L 9 3.75 L 10 4.52 L 11 5.51 L 12 4.85 L 13 5.10 L 14 5.15 L 15 5.66 L 16 5.98 L 17 5.57 L 18 4.80 L 19 4.07 L 20 5.36 L 21 5.05 L 22 5.15 L 23 5.08 L 24 4.95 L 25 7.33 L 26 8.28 L 27 7.80 L 28 12.21 L 29 12.29 L 30 12.63 L 31 13.22 L 32 13.42 L 33 13.22 L 34 13.02 L 35 13.31 L 36 12.02 L 37 12.92 L 38 12.64 L 39 12.32 L 40 11.00 L 41 10.82 L 42 10.71 L 43 11.23 L 44 11.06 L 45 11.17 L 46 10.98 L 47 10.25 L 48 10.81 L 49 11.16 L 50 11.88 L 51 12.11 L 52 11.85 L 53 12.56 L 54 12.36 L 55 12.23 L 56 11.26 L 57 11.59 L 58 11.49 L 59 12.28 L 60 11.98 L 61 11.79 L 62 12.00 L 63 11.99 L 64 12.84 L 65 12.20 L 66 13.54 L 67 12.81 L 68 12.17 L 69 12.87 L 70 11.79 L 71 11.76 L 72 10.45 L 73 10.31 L 74 10.70 L 75 11.58 L 76 11.32 L 77 12.03 L 78 13.37 L 79 13.06 L 80 14.33 L 81 14.72 L 82 14.80 L 83 15.17 L 84 16.00 L 85 15.18 L 86 15.02 L 87 14.48 L 88 9.85 L 89 9.41 L 90 9.86 L 91 9.76 L 92 10.87 L 93 9.69 L 94 9.31 L 95 9.46 L 96 11.18 L 97 12.11 L 98 11.00 L 99 10.22 L 100 11.11 L 101 10.49 L 102 11.26 L 103 9.54 L 104 9.22 L 105 9.39 L 106 9.02 L 107 8.31 L 108 7.83 L 109 7.63 L 110 7.84 L 111 10.37 L 112 9.91 L 113 9.89 L 114 9.21 L 115 9.30 L 116 8.42 L 117 8.50 L 118 7.95 L 119 8.34 L 120 8.64 L 121 8.09 L 122 7.32 L 123 8.12 L 124 8.93 L 125 8.96 L 126 9.92 L 127 11.39 L 128 12.76 L 129 13.10 L 130 13.27 L 131 13.49 L 132 13.31 L 133 13.33 L 134 12.66 L 135 12.48 L 136 12.90 L 137 13.44 L 138 13.48 L 139 13.22 L 140 13.83 L 141 13.27 L 142 12.75 L 143 12.71 L 144 13.10 L 145 12.77 L 146 12.66 L 147 13.26 L 148 11.40 L 149 12.21 L 150 11.95 L 151 12.66 L 152 13.33"></path></svg>
-      </td>
-    </tr>
-    <tr>
-      <td>Other Reactor</td>
-      <td>9/18/2016</td>
-      <td class="table-cell-sparkline">
-        <svg class="sparkline hunky-dory" viewBox="0 0 100 20"><path d="M0 7.70 L 0 7.70 L 7 13.42 L 14 16.00 L 21 5.78 L 28 12.76 L 35 3.42 L 42 6.80 L 49 7.65 L 56 7.47 L 63 5.98 L 70 4.93 L 77 0.00" fill="none"></path><path d="M0 7.70 L 0 7.70 L 7 13.42 L 14 16.00 L 21 5.78 L 28 12.76 L 35 3.42 L 42 6.80 L 49 7.65 L 56 7.47 L 63 5.98 L 70 4.93 L 77 0.00 V 16 L 0 16 Z" stroke="none"></path></svg>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table table-acme table-metrics">
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Date</th>
+        <th>Data</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Main Reactor</td>
+        <td>9/18/2016</td>
+        <td class="table-cell-sparkline">
+          <svg class="sparkline hunky-dory" viewBox="0 0 100 20"><path d="M0 7.70 L 0 7.70 L 7 13.42 L 14 16.00 L 21 5.78 L 28 12.76 L 35 3.42 L 42 6.80 L 49 7.65 L 56 7.47 L 63 5.98 L 70 4.93 L 77 0.00" fill="none"></path><path d="M0 7.70 L 0 7.70 L 7 13.42 L 14 16.00 L 21 5.78 L 28 12.76 L 35 3.42 L 42 6.80 L 49 7.65 L 56 7.47 L 63 5.98 L 70 4.93 L 77 0.00 V 16 L 0 16 Z" stroke="none"></path></svg>
+        </td>
+      </tr>
+      <tr class="danger">
+        <td>Thermonuclear Core</td>
+        <td>9/18/2016</td>
+        <td class="table-cell-sparkline">
+          <svg class="sparkline death-and-glory" viewBox="0 0 100 20"><path d="M0 1.07 L 0 1.07 L 1 0.45 L 2 0.00 L 3 1.12 L 4 1.33 L 5 2.48 L 6 3.44 L 7 3.52 L 8 3.81 L 9 3.75 L 10 4.52 L 11 5.51 L 12 4.85 L 13 5.10 L 14 5.15 L 15 5.66 L 16 5.98 L 17 5.57 L 18 4.80 L 19 4.07 L 20 5.36 L 21 5.05 L 22 5.15 L 23 5.08 L 24 4.95 L 25 7.33 L 26 8.28 L 27 7.80 L 28 12.21 L 29 12.29 L 30 12.63 L 31 13.22 L 32 13.42 L 33 13.22 L 34 13.02 L 35 13.31 L 36 12.02 L 37 12.92 L 38 12.64 L 39 12.32 L 40 11.00 L 41 10.82 L 42 10.71 L 43 11.23 L 44 11.06 L 45 11.17 L 46 10.98 L 47 10.25 L 48 10.81 L 49 11.16 L 50 11.88 L 51 12.11 L 52 11.85 L 53 12.56 L 54 12.36 L 55 12.23 L 56 11.26 L 57 11.59 L 58 11.49 L 59 12.28 L 60 11.98 L 61 11.79 L 62 12.00 L 63 11.99 L 64 12.84 L 65 12.20 L 66 13.54 L 67 12.81 L 68 12.17 L 69 12.87 L 70 11.79 L 71 11.76 L 72 10.45 L 73 10.31 L 74 10.70 L 75 11.58 L 76 11.32 L 77 12.03 L 78 13.37 L 79 13.06 L 80 14.33 L 81 14.72 L 82 14.80 L 83 15.17 L 84 16.00 L 85 15.18 L 86 15.02 L 87 14.48 L 88 9.85 L 89 9.41 L 90 9.86 L 91 9.76 L 92 10.87 L 93 9.69 L 94 9.31 L 95 9.46 L 96 11.18 L 97 12.11 L 98 11.00 L 99 10.22 L 100 11.11 L 101 10.49 L 102 11.26 L 103 9.54 L 104 9.22 L 105 9.39 L 106 9.02 L 107 8.31 L 108 7.83 L 109 7.63 L 110 7.84 L 111 10.37 L 112 9.91 L 113 9.89 L 114 9.21 L 115 9.30 L 116 8.42 L 117 8.50 L 118 7.95 L 119 8.34 L 120 8.64 L 121 8.09 L 122 7.32 L 123 8.12 L 124 8.93 L 125 8.96 L 126 9.92 L 127 11.39 L 128 12.76 L 129 13.10 L 130 13.27 L 131 13.49 L 132 13.31 L 133 13.33 L 134 12.66 L 135 12.48 L 136 12.90 L 137 13.44 L 138 13.48 L 139 13.22 L 140 13.83 L 141 13.27 L 142 12.75 L 143 12.71 L 144 13.10 L 145 12.77 L 146 12.66 L 147 13.26 L 148 11.40 L 149 12.21 L 150 11.95 L 151 12.66 L 152 13.33"></path></svg>
+        </td>
+      </tr>
+      <tr>
+        <td>Other Reactor</td>
+        <td>9/18/2016</td>
+        <td class="table-cell-sparkline">
+          <svg class="sparkline hunky-dory" viewBox="0 0 100 20"><path d="M0 7.70 L 0 7.70 L 7 13.42 L 14 16.00 L 21 5.78 L 28 12.76 L 35 3.42 L 42 6.80 L 49 7.65 L 56 7.47 L 63 5.98 L 70 4.93 L 77 0.00" fill="none"></path><path d="M0 7.70 L 0 7.70 L 7 13.42 L 14 16.00 L 21 5.78 L 28 12.76 L 35 3.42 L 42 6.80 L 49 7.65 L 56 7.47 L 63 5.98 L 70 4.93 L 77 0.00 V 16 L 0 16 Z" stroke="none"></path></svg>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```
 */
 
@@ -67,40 +69,46 @@ name: userTable
 category: components
 ---
 
-<table class="table table-hover table-acme table-users">
-  <thead>
-    <tr>
-      <th>Photo</th>
-      <th>First</th>
-      <th>Last</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="table-cell-photo"><img src="http://placecage.com/50/50" class="img-circle"/></td>
-      <td>Jane</td>
-      <td>Doe</td>
-      <td>jdoe123</td>
-    </tr>
-    <tr>
-      <td class="table-cell-photo"><img src="http://placecage.com/55/55" class="img-circle"/></td>
-      <td>John</td>
-      <td>Smith</td>
-      <td>jsmith123</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table table-hover table-acme table-users">
+    <thead>
+      <tr>
+        <th>Photo</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="table-cell-photo"><img src="http://placecage.com/50/50" class="img-circle"/></td>
+        <td>Jane</td>
+        <td>Doe</td>
+        <td>jdoe123</td>
+      </tr>
+      <tr>
+        <td class="table-cell-photo"><img src="http://placecage.com/55/55" class="img-circle"/></td>
+        <td>John</td>
+        <td>Smith</td>
+        <td>jsmith123</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```
 */
 
 .table-acme {
   border: 1px solid #ddd;
   box-shadow: 0 2px 0 0 #ddd;
-  font-size: 1.25em;
+  font-size: 1em;
 
   tbody tr td {
     vertical-align: middle;
+  }
+
+  @media(min-width: $screen-sm-min) {
+    font-size: 1.25em;
   }
 }
 
