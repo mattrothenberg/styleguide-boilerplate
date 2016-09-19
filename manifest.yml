@@ -1,0 +1,6 @@
+---
+applications:
+- name: acme-styleguide
+  memory: 256M
+  path: ./docs/
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
