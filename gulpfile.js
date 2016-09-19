@@ -3,9 +3,15 @@
 var autoprefixer = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
 var gulp = require('gulp');
+var open = require('gulp-open');
+var os = require('os');
 var sass = require('gulp-sass');
 var shell = require('gulp-shell');
 var sourcemaps = require('gulp-sourcemaps');
+
+var browser = os.platform() === 'linux' ? 'google-chrome' : (
+  os.platform() === 'darwin' ? 'google chrome' : (
+  os.platform() === 'win32' ? 'chrome' : 'firefox'));
 
 gulp.task('hologram', shell.task([
   'hologram config.yml'
@@ -37,10 +43,18 @@ gulp.task('connect', function() {
   });
 });
 
+gulp.task('open', function() {
+  gulp.src('./docs/index.html')
+    .pipe(open({
+      app: browser,
+      uri: 'http://localhost:8080'
+    }))
+})
+
 gulp.task('html', function () {
   gulp.src('./docs/*')
     .pipe(connect.reload());
 });
 
 
-gulp.task('default', ['sass', 'hologram', 'connect', 'watch', ])
+gulp.task('default', ['open', 'sass', 'hologram', 'connect', 'watch', ])
