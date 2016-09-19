@@ -1,7 +1,7 @@
 # Acme Styleguide
 
 This is an example project that uses [hologram](http://trulia.github.io/hologram) to build [this style
-guide](http://trulia.github.io/hologram-example). In order to get started, run the following.
+guide](http://acme-styleguide.cfapps.io). In order to get started, run the following.
 
     npm install -g gulp-cli
     npm install
