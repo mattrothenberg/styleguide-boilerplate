@@ -1,0 +1,47 @@
+/*doc
+---
+title: Forms
+name: forms
+category: components
+---
+Bacon ipsum dolor amet short loin kielbasa pig boudin, bresaola rump cupim. Jerky biltong picanha short loin, tail ham tongue kielbasa landjaeger. Tri-tip kevin beef, swine prosciutto pancetta biltong.
+
+```html_example
+<div class="row">
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label class="control-label" for="username">Username</label>
+      <input type="text" name="username" class="form-control" placeholder="Enter username"/>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label class="control-label" for="username">Password</label>
+      <input type="password" name="password" class="form-control" placeholder="Enter password"/>
+    </div>
+  </div>
+</div>
+```
+*/
+
+.control-label {
+  color: darken(#ccc, 25%);
+  font-weight: normal;
+  font-size: 1.15em;
+}
+
+.form-control {
+  border-radius: 0;
+  border-width: 2px;
+  box-shadow: none;
+  height: auto;
+  font-size: 1.15em;
+
+  &:hover {
+    border-color: darken(#ccc, 10%);
+  }
+
+  &:focus {
+    border-color: map-get($colors, 'belize-hole');
+  }
+}
