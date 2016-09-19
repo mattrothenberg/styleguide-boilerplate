@@ -8,7 +8,6 @@ Green juice vaporware echo park, craft beer lyft tattooed sustainable. Meh skate
 */
 
 /*doc
-```html_example
 ---
 title: Metrics Table
 parent: tables
@@ -16,7 +15,11 @@ name: metricsTable
 category: components
 ---
 
-<table class="table table-hover table-acme table-metrics">
+Add the `hunky-dory` class to sparklines indicating happy, positive events.
+Add the `death-and-glory` class to sparklines indicating, well, just that!
+
+```html_example
+<table class="table table-acme table-metrics">
   <thead>
     <tr>
       <th>Source</th>

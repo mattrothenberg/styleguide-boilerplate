@@ -38,6 +38,12 @@ body {
   }
 }
 
+.styleguide-logo {
+  height: 50px;
+  opacity: .5;
+  width: auto;
+}
+
 .styleguide-content {
   margin: 0;
   padding: 25px;
