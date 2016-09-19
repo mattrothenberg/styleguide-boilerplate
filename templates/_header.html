@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="build/css/style.css">
 
 </head>
-  <body>
+  <body class="<%= @blocks.length > 1 ? 'category-nav-showing' : '' %>">
     <nav class="side-nav">
       <div class="container-fluid">
         <div class="row">
@@ -62,13 +62,15 @@
     <main class="styleguide-content">
       <div class="container-fluid">
         <div class="row">
-          <!-- <% if !@blocks.empty? %>
-            <div class="col-sm-4">
-              <ul class="componentList listBorderedHover">
-                <% @blocks.each do |block| %>
-                  <li><a href="#<%= block[:name] %>"><%= block[:title] %></a></li>
-                <% end %>
-              </ul>
-            </div>
-          <% end %> -->
           <div class="col-sm-12">
+            <% if @blocks.length > 1 %>
+              <nav class="component-nav paxl">
+                <% @blocks.each do |block| %>
+                  <% if block[:parent].nil? %>
+                    <a class="mrm" href="#<%= block[:name] %>"><%= block[:title] %></a>
+                  <% end %>
+                <% end %>
+              </nav>
+            <% end %>
+
+            <div class="styleguide-inner">

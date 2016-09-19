@@ -15,6 +15,10 @@ body {
   body {
     padding: 0;
   }
+
+  body.category-nav-showing {
+    padding-top: 75px;
+  }
 }
 
 .side-nav {
@@ -126,6 +130,35 @@ body.nav-showing .btn-hamburger {
     top: auto;
     visibility: visible;
   }
+}
+
+.component-nav {
+  background: #fff;
+  box-shadow: inset 0 -1px 0 0 #eee;
+  display: none;
+  left: 275px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: box-shadow .2s ease-out;
+  width: 100%;
+  z-index: 9999;
+}
+
+@media(min-width: 768px) {
+  .component-nav {
+    display: block;
+  }
+}
+
+.component-nav.is-fixed {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
+}
+
+.component-nav {
+  letter-spacing: .5pt;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 footer {
