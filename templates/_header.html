@@ -64,12 +64,16 @@
         <div class="row">
           <div class="col-sm-12">
             <% if @blocks.length > 1 %>
-              <nav class="component-nav paxl">
+              <nav class="component-nav" data-gumshoe-header>
+                <ul class="list-unstyled list-inline mvn phl" data-gumshoe>  
                 <% @blocks.each do |block| %>
                   <% if block[:parent].nil? %>
-                    <a class="mrm" href="#<%= block[:name] %>"><%= block[:title] %></a>
+                  <li class="phn">
+                    <a class="pvxl phl" href="#<%= block[:name] %>"><%= block[:title] %></a>
+                  </li>
                   <% end %>
                 <% end %>
+                </ul>
               </nav>
             <% end %>
 

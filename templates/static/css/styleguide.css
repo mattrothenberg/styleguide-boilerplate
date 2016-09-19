@@ -155,10 +155,24 @@ body.nav-showing .btn-hamburger {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
 }
 
-.component-nav {
-  letter-spacing: .5pt;
+.component-nav a {
+  color: #7d7d7d;
+  display: inline-block;
   font-weight: 500;
+  letter-spacing: .5pt;
   text-transform: uppercase;
+  transition: box-shadow .2s ease-out,
+              color .2s ease-out;
+}
+
+.component-nav a:focus, .component-nav a:hover {
+  color: #7d7d7d;
+  text-decoration: none;
+}
+
+.component-nav a.active {
+  box-shadow: inset 0 -3px 0 0 #008FED;
+  color: #008FED;
 }
 
 footer {
