@@ -38,6 +38,26 @@ h1.styleguide:first-of-type {
   margin-bottom: 4em;
 }
 
+.codeExample .exampleOutput {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 55px 25px 25px;
+  position: relative;
+}
+
+.codeExample .exampleOutput:before {
+  color: #a4a4a4;
+  content: 'Example';
+  font-size: 12px;
+  font-weight: 500;
+  left: 15px;
+  top: 15px;
+  text-transform: uppercase;
+  position: absolute;
+  letter-spacing: 1px;
+}
+
 h1.styleguide:after {
   background: #eee;
   content: '';
@@ -47,6 +67,7 @@ h1.styleguide:after {
   width: 50px;
 }
 
-.codeBlock {
-  margin: 10px 0 0;
+.codeBlock pre {
+  border-radius: 0;
+  border-color: #ddd;
 }
