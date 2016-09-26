@@ -5,6 +5,7 @@ guide](http://acme-styleguide.cfapps.io). In order to get started, run the follo
 
     npm install -g gulp-cli
     npm install
+    bundle install
     gulp
 
 A web browser should open at [http://localhost:8080](http://localhost:8080)
