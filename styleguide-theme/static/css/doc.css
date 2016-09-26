@@ -1,0 +1,73 @@
+.codeTable table {
+  table-layout: fixed;
+  width: 100%;
+  max-width: 100%;
+}
+
+.codeTable table th,
+.codeTable table td {
+  border-top: 1px solid #ddd;
+  font-weight: inherit;
+  line-height: 1.42857143;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+p.lead {
+  font-weight: normal;
+}
+
+p.styleguide {
+  font-size: 1.35em;
+  line-height: 1.4;
+  margin: 0 0 1.5em;
+}
+
+h1.styleguide {
+  color: #4b4b4b;
+  font-weight: normal;
+  margin: 1.25em 0 0;
+  padding: 0 0 10px;
+}
+
+h1.styleguide:first-of-type {
+  margin: 0;
+}
+
+.codeExample {
+  margin-bottom: 4em;
+}
+
+.codeExample .exampleOutput {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 55px 25px 25px;
+  position: relative;
+}
+
+.codeExample .exampleOutput:before {
+  color: #a4a4a4;
+  content: 'Example';
+  font-size: 12px;
+  font-weight: 500;
+  left: 15px;
+  top: 15px;
+  text-transform: uppercase;
+  position: absolute;
+  letter-spacing: 1px;
+}
+
+h1.styleguide:after {
+  background: #eee;
+  content: '';
+  display: block;
+  height: 4px;
+  margin: 10px 0 .5em;
+  width: 50px;
+}
+
+.codeBlock pre {
+  border-radius: 0;
+  border-color: #ddd;
+}

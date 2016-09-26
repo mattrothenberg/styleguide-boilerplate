@@ -4,10 +4,10 @@
 source: ./styles
 
 # The directory that hologram will build to
-destination: ./docs
+destination: ./styleguide-dist
 
 # The assets needed to build the docs (includes header.html, footer.html, etc)
-documentation_assets: ./templates
+documentation_assets: ./styleguide-theme
 
 # This is a custom markdown renderer (see Redcarpet documentation for
 # how to do this)

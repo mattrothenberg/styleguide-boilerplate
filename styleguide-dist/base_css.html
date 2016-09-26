@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Acme Styleguide | Base CSS</title>
+    <link rel="shortcut icon" href="static/favicon.ico" />
+
+    <!-- Search engines -->
+    <meta name="description" content="A boilerplate for creating front-end style guides, powered by Hologram.">
+    <!-- Google Plus -->
+    <!-- Update your html tag to include the itemscope and itemtype attributes. -->
+    <!-- html itemscope itemtype="http://schema.org/{CONTENT_TYPE}" -->
+    <meta itemprop="image" content="http://acme-styleguide.cfapps.io/static/favicon.ico">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="A boilerplate for creating front-end style guides, powered by Hologram.">
+    <meta name="twitter:site" content="@mattrothenberg">
+    <meta name="twitter:title" content="Acme Styleguide">
+    <meta name="twitter:description" content="A boilerplate for creating front-end style guides, powered by Hologram.">
+    <meta name="twitter:creator" content="@mattrothenberg">
+    <meta name="twitter:image:src" content="http://acme-styleguide.cfapps.io/static/favicon.ico">
+    <!-- Open Graph General (Facebook & Pinterest) -->
+    <meta property="og:url" content="http://acme-styleguide.cfapps.io">
+    <meta property="og:title" content="Acme Styleguide">
+    <meta property="og:description" content="A boilerplate for creating front-end style guides, powered by Hologram.">
+    <meta property="og:site_name" content="Acme Styleguide">
+    <meta property="og:image" content="http://acme-styleguide.cfapps.io/static/favicon.ico">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_us">
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="static/css/styleguide.css">
+    <link rel="stylesheet" href="static/css/doc.css">
+    <link rel="stylesheet" href="static/css/github.css">
+
+    <!-- CSS to be documented -->
+    <link rel="stylesheet" href="build/css/style.css">
+
+</head>
+  <body class="">
+    <nav class="side-nav">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="media">
+              <div class="media-left media-middle">
+                <img class="styleguide-logo" src="static/acme-logo.svg" alt="">
+              </div>
+              <div class="media-body media-middle">
+                <h1 class="h3 em-mid type-light mtn mbs">Acme Inc.</h1>
+                <h2 class="h4 em-normal type-light mvn">Front-end styleguide</h2>
+              </div>
+              <div class="media-right media-middle">
+                <button id="menuToggle" class="btn btn-hamburger visible-xs">
+                  <svg class="hamburger" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M19,33h62c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2,0.896-2,2S17.896,33,19,33z"/><path d="M19,53h62c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2,0.896-2,2S17.896,53,19,53z"/><path d="M19,73h62c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2,0.896-2,2S17.896,73,19,73z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="category-navigation">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="list-unstyled">
+                <li><a class="btn btn-block btn-nav mvl " href="index.html">Intro</a></li>
+                <li><a class="btn btn-block btn-nav mvl " href="colors.html">Colors</a></li>
+                <li><a class="btn btn-block btn-nav mvl " href="typography.html">Typography</a></li>
+                <li><a class="btn btn-block btn-nav mvl " href="components.html">Components</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+
+
+    <main class="styleguide-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            
+
+            <div class="styleguide-inner">
+<h1 id="background" class="styleguide">Background Colors</h1>
+<p class="styleguide">We have a few background colors that can be used in various contexts.
+These are not for use as the entire page background but instead for
+specific components and modules on the page.</p>
+<div class="line txtC">
+    <div class="col cols6 ">
+      <div class="docSwatch backgroundLowlight"></div>
+      <code>backgroundLowlight</code>
+    </div>
+    <div class="col cols6 ">
+      <div class="docSwatch backgroundHighlight"></div>
+      <code>backgroundHighlight</code>
+    </div>
+    <div class="col cols6 ">
+      <div class="docSwatch backgroundBasic"></div>
+      <code>backgroundBasic</code>
+    </div>
+    <div class="col cols6 lastCol">
+      <div class="docSwatch backgroundInverse"></div>
+      <code>backgroundInverse</code>
+    </div>
+</div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>
+          Made with
+          <img class="icon-heart mhs" src="static/heart.svg" alt="">
+          in NYC
+      </footer>
+    </div>
+  </main>
+  
+  <!-- component js and init scripts -->
+  <script src="static/js/zenscroll-min.js"></script>
+  <script src="static/js/gumshoe-min.js"></script>
+  <script src="static/js/scripts.js"></script>
+</body>
+</html>

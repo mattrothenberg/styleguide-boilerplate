@@ -31,20 +31,20 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', function(){
-  gulp.watch(['./styles/*', './styles/_*.scss'], ['sass', 'hologram', 'html']);
-  gulp.watch(['./docs/*.html', './templates/*.html'], ['html']);
-  gulp.watch(['./templates/**/*', './styles/*.md'], ['hologram', 'html']);
+  gulp.watch(['./styles/*', './styles/_*.scss', './styles/*.md'], ['sass', 'hologram', 'html']);
+  // gulp.watch(['./styleguide-dist/*.html', './templates/*.html'], ['html']);
+  gulp.watch(['./styleguide-theme/**/*'], ['hologram', 'html']);
 });
 
 gulp.task('connect', function() {
   connect.server({
-    root: './docs',
+    root: './styleguide-dist',
     livereload: true
   });
 });
 
 gulp.task('open', function() {
-  gulp.src('./docs/index.html')
+  gulp.src('./styleguide-dist/index.html')
     .pipe(open({
       app: browser,
       uri: 'http://localhost:8080'
@@ -52,7 +52,7 @@ gulp.task('open', function() {
 })
 
 gulp.task('html', function () {
-  gulp.src('./docs/*')
+  gulp.src('./styleguide-dist/*')
     .pipe(connect.reload());
 });
 
