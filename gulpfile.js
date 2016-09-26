@@ -32,7 +32,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', function(){
   gulp.watch(['./styles/*', './styles/_*.scss', './styles/*.md'], ['sass', 'hologram', 'html']);
-  // gulp.watch(['./styleguide-dist/*.html', './templates/*.html'], ['html']);
+  gulp.watch(['./styleguide-dist/*.html', './templates/*.html'], ['html']);
   gulp.watch(['./styleguide-theme/**/*'], ['hologram', 'html']);
 });
 
