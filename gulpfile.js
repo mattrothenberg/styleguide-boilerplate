@@ -23,7 +23,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./build/css'))
+    .pipe(gulp.dest('./built-styles/css'))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       flexbox: true
