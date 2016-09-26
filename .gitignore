@@ -1,4 +1,5 @@
 
 /node_modules
-/sass-cache
+/.sass-cache
+/built-styles
 /styleguide-dist
