@@ -202,3 +202,11 @@ footer {
   padding: 10px 0;
   text-transform: uppercase;
 }
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
