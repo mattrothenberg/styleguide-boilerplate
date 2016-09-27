@@ -145,6 +145,10 @@ body.nav-showing .btn-hamburger {
   z-index: 9999;
 }
 
+.component-nav ul {
+  max-width: calc(100% - 275px);
+}
+
 @media(min-width: 768px) {
   .component-nav {
     display: block;
