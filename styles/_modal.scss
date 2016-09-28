@@ -1,0 +1,83 @@
+/*doc
+---
+title: Modals
+name: modals
+category: components
+---
+Green juice vaporware echo park, craft beer lyft tattooed sustainable. Meh skateboard seitan lumbersexual typewriter, flannel art party swag gluten-free blue bottle disrupt forage tacos thundercats chillwave.
+*/
+
+/*doc
+---
+title: Confirm Save Modal
+parent: modals
+name: confirmSaveModal
+category: components
+---
+
+Show this modal when users click the Save [button](#button).
+
+```html_example
+<div class="faux-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Yo dawg, I heard you wanted to save.</h4>
+      </div>
+      <div class="modal-body">
+        <p class="mvn">
+          We regret to inform you that lorem ipsum dolor amet...
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+*/
+
+/*doc
+---
+title: Confirm Delete Modal
+parent: modals
+name: confirmDeleteModal
+category: components
+---
+
+Show this modal when users click the Delete [button](#button).
+
+```html_example
+<div class="faux-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Are you sure?</h4>
+      </div>
+      <div class="modal-body">
+        <p class="mvn">
+          We regret to inform you that lorem ipsum dolor amet...
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">Off with its head</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+*/
+
+.faux-modal {
+  background: rgba(0, 0, 0, .45);
+  padding: 15px;
+
+  .modal-dialog {
+    max-width: 85%;
+  }
+}
