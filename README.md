@@ -49,6 +49,9 @@ As if we needed another tool, there's another one that you should be aware of: [
 
 ## Installation
 
+### Ruby
+Recommend using [RVM](https://rvm.io/rvm/install) so you don't have to `chown` to use your system Ruby. Follow the steps at their site to download and restart your shell session.
+
 ### Node / NPM
 https://docs.npmjs.com/getting-started/installing-node
 
@@ -60,6 +63,7 @@ xcode-select --install
 
     npm install -g gulp-cli
     npm install
+    gem install bundler
     bundle install
     gulp
 
