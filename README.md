@@ -11,9 +11,9 @@ Hologram is a Ruby gem that parses specially formatted comments in your Sass/CSS
 
 The two main directories that you will be interacting with are `styleguide-theme` and `styles`. 
 
-The former directory is home to the Header and Footer of your styleguide, as well as any static assets you might need to theme it (Yes, you can _style_ the _styleguide_ via this directory). Note that the Header and Footer are simple HTML files, wherein you can pull in 3rd party assets (in this case, [Bootstrap](http://getbootstrap.com), [Font Awesome](http://fontawesome.io), and the [Roboto Web Font](https://fonts.google.com/specimen/Roboto)). Hologram is smart enough to spit out the content of your styleguide _in between_ said header and footer, so don't worry about having to know any Ruby!
+The former directory is home to the Header and Footer of your styleguide, as well as any static assets you might need to theme it (Yes, you can _style_ the _styleguide_ via this directory). Note that the Header and Footer are simple HTML files, wherein you can pull in 3rd party assets (in this case: [Font Awesome](http://fontawesome.io), and the [Roboto Web Font](https://fonts.google.com/specimen/Roboto)). Hologram is smart enough to spit out the content of your styleguide _in between_ said header and footer, so don't worry about having to know any Ruby!
 
-Where the fun begins is the `styles` folder, which is home to a list of Sass files. Feel free to write vanilla CSS, or SCSS-flavored Sass -- the only requirement is that any new files you add to the directory are imported in the `style.scss` file. For example, if you were to add a new file to the directory called `_toasts.scss`, be sure to add a corresponding statement in `style.scss`.
+Where the fun begins is the `styles` folder, which is home to a list of Sass files. To get your project kickstarted, we've added [Bootstrap 4](http://getbootstrap.com) to this directory. In any case, feel free to write vanilla CSS, or SCSS-flavored Sass -- the only requirement is that any new files you add to the directory are imported in the `style.scss` file. For example, if you were to add a new file to the directory called `_toasts.scss`, be sure to add a corresponding statement in `style.scss`.
 
 
     @import 'toasts';
