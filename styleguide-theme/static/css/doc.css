@@ -9,7 +9,7 @@
   border-top: 1px solid #ddd;
   font-weight: inherit;
   line-height: 1.42857143;
-  padding: 8px;
+  padding: 20px 8px;
   vertical-align: middle;
 }
 
@@ -69,5 +69,14 @@ h1.styleguide:after {
 
 .codeBlock pre {
   border-radius: 0;
-  border-color: #ddd;
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
 }
