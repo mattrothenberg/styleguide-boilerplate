@@ -8,85 +8,78 @@ Bacon ipsum dolor amet short loin kielbasa pig boudin, bresaola rump cupim. Jerk
 
 ```html_example
 <div class="row">
-  <div class="col-sm-12 col-md-6">
-    <div class="card card-photo mbxl">
-      <div class="card-header pal">
-        <div class="media">
-          <div class="media-left media-middle">
-            <img class="img-circle card-user-avatar" src="https://pbs.twimg.com/profile_images/486132305069477891/aUnjJ9LM.jpeg"/>
-          </div>
-          <div class="media-body media-middle">
-            <h1 class="h4 mtn mbs">Matt Rothenberg</h1>
-            <p class="mvn text-muted">
-              <i class="fa fa-map-marker mrs"></i>
-              New York, NY
-            </p> 
-          </div>
-          <div class="media-right media-middle">
-            <p class="mvn text-muted">2 days ago</p>
-          </div>
-        </div>
+  <div class="col-sm-12 col-md-4">
+    <div class="card">
+      <img class="card-img-top img-fluid" src="http://placehold.it/500x350&text=Card Image"/>
+      <div class="card-block">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
-      <div class="card-photo" style="background-image: url('https://scontent-yyz1-1.cdninstagram.com/t51.2885-15/e15/10575988_1459334560997005_2019137631_n.jpg?ig_cache_key=Nzc1NDI0MTU3ODE4Nzg2ODQw.2')"></div>
-      <div class="card-body phl pvxl">
-        <h2 class="h4 mtn mbl">#creeper</h2>
-        <p class="text-secondary">Bacon ipsum dolor amet short loin kielbasa pig boudin, bresaola rump cupim. Jerky biltong picanha short loin</p>
-        <ul class="list-inline text-right mvn">
-          <li>
+      <div class="card-block p-y-0">
+        <ul class="list-inline">
+          <li class="list-inline-item m-r-1">
             <i class="fa fa-heart mrs text-alizarin"></i>
             347
           </li>
-          <li class="text-muted">
+          <li class="list-inline-item m-r-1">
             <i class="fa fa-comment"></i>
             29
           </li>
-          <li class="text-muted">
+          <li class="list-inline-item">
             <i class="fa fa-eye"></i>
             8,309
           </li>
-        <ul>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="col-sm-12 col-md-6">
-    <div class="card card-photo">
-      <div class="card-header pal">
-        <div class="media">
-          <div class="media-left media-middle">
-            <img class="img-circle card-user-avatar" src="https://pbs.twimg.com/profile_images/486132305069477891/aUnjJ9LM.jpeg"/>
-          </div>
-          <div class="media-body media-middle">
-            <h1 class="h4 mtn mbs">Matt Rothenberg</h1>
-            <p class="mvn text-muted">
-              <i class="fa fa-map-marker mrs"></i>
-              New York, NY
-            </p> 
-          </div>
-          <div class="media-right media-middle">
-            <p class="mvn text-muted">2 days ago</p>
-          </div>
-        </div>
+  <div class="col-sm-12 col-md-4">
+    <div class="card">
+      <img class="card-img-top img-fluid" src="http://placehold.it/500x350&text=Card Image"/>
+      <div class="card-block">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
-      <div class="card-photo" style="background-image: url('https://scontent-yyz1-1.cdninstagram.com/t51.2885-15/e15/1742887_262971917199138_1845956607_n.jpg?ig_cache_key=NjQ1NDk4NjExNjk0Mjc4NDE3.2')"></div>
-      <div class="card-body phl pvxl">
-        <h2 class="h4 mtn mbl">
-          <i class="em em-heart_eyes"></i>
-        </h2>
-        <p class="text-secondary">Bacon ipsum dolor amet short loin kielbasa pig boudin, bresaola rump cupim. Jerky biltong picanha short loin</p>
-        <ul class="list-inline text-right mvn">
-          <li>
+      <div class="card-block p-y-0">
+        <ul class="list-inline">
+          <li class="list-inline-item m-r-1">
             <i class="fa fa-heart mrs text-alizarin"></i>
             347
           </li>
-          <li class="text-muted">
+          <li class="list-inline-item m-r-1">
             <i class="fa fa-comment"></i>
             29
           </li>
-          <li class="text-muted">
+          <li class="list-inline-item">
             <i class="fa fa-eye"></i>
             8,309
           </li>
-        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-4">
+    <div class="card">
+      <img class="card-img-top img-fluid" src="http://placehold.it/500x350&text=Card Image"/>
+      <div class="card-block">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <div class="card-block p-y-0">
+        <ul class="list-inline">
+          <li class="list-inline-item m-r-1">
+            <i class="fa fa-heart mrs text-alizarin"></i>
+            347
+          </li>
+          <li class="list-inline-item m-r-1">
+            <i class="fa fa-comment"></i>
+            29
+          </li>
+          <li class="list-inline-item">
+            <i class="fa fa-eye"></i>
+            8,309
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -96,30 +89,6 @@ Bacon ipsum dolor amet short loin kielbasa pig boudin, bresaola rump cupim. Jerk
 */
 
 .card {
-  background: #fff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16),
               0 2px 10px 0 rgba(0, 0, 0, .12);
-}
-
-.card-header {
-
-  .media-right {
-    min-width: 80px;
-  }
-}
-
-.card-user-avatar {
-  height: 65px;
-  width: 65px;
-}
-
-.card-photo {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 300px;
-
-  @media(min-width: $screen-sm-min) {
-    min-height: 400px;
-  }
 }

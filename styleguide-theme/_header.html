@@ -34,8 +34,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Styleguide CSS -->
     <link rel="stylesheet" href="static/css/styleguide.css">
@@ -56,11 +54,11 @@
                 <img class="styleguide-logo" src="static/acme-logo.svg" alt="">
               </div>
               <div class="media-body media-middle">
-                <h1 class="h3 em-mid type-light mtn mbs">Acme Inc.</h1>
-                <h2 class="h4 em-normal type-light mvn">Front-end styleguide</h2>
+                <h1 class="h4 em-mid type-light m-y-0">Acme Inc.</h1>
+                <h2 class="h6 em-normal type-light m-t-1">Front-end styleguide</h2>
               </div>
               <div class="media-right media-middle">
-                <button id="menuToggle" class="btn btn-hamburger visible-xs">
+                <button id="menuToggle" class="btn btn-hamburger p-a-0 hidden-sm-up">
                   <svg class="hamburger" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M19,33h62c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2,0.896-2,2S17.896,33,19,33z"/><path d="M19,53h62c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2,0.896-2,2S17.896,53,19,53z"/><path d="M19,73h62c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2,0.896-2,2S17.896,73,19,73z"/></svg>
                 </button>
               </div>
@@ -71,12 +69,11 @@
           <div class="row">
             <div class="col-sm-12">
               <ul class="list-unstyled">
-                <li><a class="btn btn-block btn-nav mvl <%= 'active' if title.length == 0 %>" href="index.html">Intro</a></li>
-                <li><a class="btn btn-block btn-nav mvl <%= 'active' if title == 'colors' %>" href="colors.html">Colors</a></li>
-                <li><a class="btn btn-block btn-nav mvl <%= 'active' if title == 'typography' %>" href="typography.html">Typography</a></li>
-                <li><a class="btn btn-block btn-nav mvl <%= 'active' if title == 'components' %>" href="components.html
+                <li><a class="btn btn-block btn-nav m-y-1 <%= 'active' if title.length == 0 %>" href="index.html">Intro</a></li>
+                <li><a class="btn btn-block btn-nav m-y-1 <%= 'active' if title == 'colors' %>" href="colors.html">Colors</a></li>
+                <li><a class="btn btn-block btn-nav m-y-1 <%= 'active' if title == 'typography' %>" href="typography.html">Typography</a></li>
+                <li><a class="btn btn-block btn-nav m-y-1 <%= 'active' if title == 'components' %>" href="components.html
                 ">Components</a></li>
-                <li><a class="btn btn-block btn-nav mvl <%= 'active' if title == 'helpers' %>" href="helpers.html">Helpers</a></li>
               </ul>
             </div>
           </div>
@@ -91,11 +88,11 @@
           <div class="col-sm-12">
             <% if @blocks.length > 1 %>
               <nav class="component-nav" data-gumshoe-header>
-                <ul class="list-unstyled list-inline man phl nowrap overflow-x-auto" data-gumshoe>  
+                <ul class="list-inline m-a-0 p-x-3 nowrap overflow-x-auto" data-gumshoe>  
                 <% @blocks.each do |block| %>
                   <% if block[:parent].nil? %>
-                  <li class="phn">
-                    <a class="pvxl phl" href="#<%= block[:name] %>"><%= block[:title] %></a>
+                  <li class="list-inline-item">
+                    <a class="p-y-3 p-x-2" href="#<%= block[:name] %>"><%= block[:title] %></a>
                   </li>
                   <% end %>
                 <% end %>

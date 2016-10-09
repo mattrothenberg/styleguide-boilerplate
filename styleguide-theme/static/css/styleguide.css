@@ -64,7 +64,7 @@ body {
   background: transparent;
   color: white;
   font-weight: 500;
-  text-align: left;
+  text-align: left !important;
   transition: color .2s ease-out,
               background .2s ease-out;
 }
@@ -85,7 +85,6 @@ body {
   background: transparent;
   border: 0;
   height: 40px;
-  padding: 0;
   text-align: center;
   width: 50px;
 }
@@ -184,9 +183,9 @@ footer {
 }
 
 .icon-heart {
-  height: 18px;
-  width: 18px;
-  vertical-align: top;
+  height: 15px;
+  width: 15px;
+  vertical-align: middle;
 }
 
 .section-nav {
