@@ -67,4 +67,17 @@ xcode-select --install
     bundle install
     gulp
 
-A web browser should open at [http://localhost:8080](http://localhost:8080)
+A web browser should open at [http://localhost:8080](http://localhost:8080)  
+
+
+
+
+## Deploying your styleguide
+
+### PWS
+1. Download the [CF CLI](https://github.com/cloudfoundry/cli#downloads)  
+2. `$ cf login`  
+3. `$ cf create-space [spacename]` *[i]*  
+4. `$ cf target -o "[orgname]" -s "[spacename]"` *[i]*  
+5. `$ cf push` to deploy your styleguide using the staticfile buildpack using the [manifest](https://github.com/mattrothenberg/styleguide-boilerplate/blob/master/manifest.yml)  
+*[i] This can also be managed online via [PWS](http://run.pivotal.io)*
