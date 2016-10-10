@@ -1,6 +1,6 @@
-
 /node_modules
 /.sass-cache
 /built-styles
-/.DS_Store
 /styleguide-dist
+
+/**/*.DS_Store
