@@ -8,5 +8,7 @@
         "styleguide"
     ],
     "env": {
-        "BUILDPACK_URL": "https://github.com/hone/heroku-buildpack-static",
+        "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-static.git"
+    },
+    "generator": "https://github.com/mattrothenberg/styleguide-boilerplate"
 }
