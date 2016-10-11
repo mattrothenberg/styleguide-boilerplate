@@ -3,7 +3,4 @@
   "description": "A starter project for spinning up a living styleguide",
   "repository": "https://github.com/mattrothenberg/styleguide-boilerplate",
   "keywords": ["styleguide", "live styleguide"],
-  "buildpacks": [{
-    "url": "https://github.com/heroku/heroku-buildpack-static"
-  }]
 }
