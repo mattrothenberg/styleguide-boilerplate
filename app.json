@@ -8,5 +8,5 @@
         "styleguide"
     ],
     "env": {
-        "BUILDPACK_URL": "https://github.com/hone/heroku-buildpack-static"
+        "BUILDPACK_URL": "https://github.com/hone/heroku-buildpack-static",
 }
