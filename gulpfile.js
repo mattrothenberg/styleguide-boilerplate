@@ -8,6 +8,7 @@ var os = require('os');
 var sass = require('gulp-sass');
 var shell = require('gulp-shell');
 var sourcemaps = require('gulp-sourcemaps');
+var exec = require('gulp-exec');
 
 var browser = os.platform() === 'linux' ? 'google-chrome' : (
   os.platform() === 'darwin' ? 'google chrome' : (
@@ -56,5 +57,9 @@ gulp.task('html', function () {
     .pipe(connect.reload());
 });
 
+gulp.task('deploy', shell.task([
+    'cf push'
+]));
 
-gulp.task('default', ['open', 'sass', 'hologram', 'connect', 'watch', ])
+
+gulp.task('default', ['open', 'sass', 'hologram', 'connect', 'watch', 'deploy' ])
