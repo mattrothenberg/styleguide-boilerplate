@@ -1,6 +1,14 @@
 {
-  "name": "styleguide-boilerplate",
-  "description": "A starter project for spinning up a living styleguide",
-  "repository": "https://github.com/mattrothenberg/styleguide-boilerplate",
-  "keywords": ["styleguide", "live styleguide"],
+    "name": "styleguide-boilerplate",
+    "description": "A starter project for spinning up a living styleguide",
+    "website": "https://github.com/mattrothenberg/styleguide-boilerplate",
+    "repository": "https://github.com/mattrothenberg/styleguide-boilerplate",
+    "keywords": [
+        "live styleguide",
+        "styleguide"
+    ],
+    "env": {
+        "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-static"
+    },
+    "generator": "https://www.expeditedssl.com/heroku-button-maker"
 }
