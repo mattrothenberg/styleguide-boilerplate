@@ -62,4 +62,4 @@ gulp.task('deploy', shell.task([
 ]));
 
 
-gulp.task('default', ['open', 'sass', 'hologram', 'connect', 'watch', 'deploy' ])
+gulp.task('default', ['open', 'sass', 'hologram', 'connect', 'watch' ])
