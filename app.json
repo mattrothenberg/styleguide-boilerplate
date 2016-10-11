@@ -8,7 +8,5 @@
         "styleguide"
     ],
     "env": {
-        "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-static"
-    },
-    "generator": "https://www.expeditedssl.com/heroku-button-maker"
+        "BUILDPACK_URL": "https://github.com/hone/heroku-buildpack-static"
 }
