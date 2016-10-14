@@ -81,3 +81,39 @@ A web browser should open at [http://localhost:8080](http://localhost:8080)
 4. `$ cf target -o "[orgname]" -s "[spacename]"` *[i]*  
 5. `$ cf push` to deploy your styleguide using the staticfile buildpack using the [manifest](https://github.com/mattrothenberg/styleguide-boilerplate/blob/master/manifest.yml)  
 *[i] This can also be managed online via [PWS](http://run.pivotal.io)*
+
+### Heroku
+
+Make sure you have the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line) downloaded. Then login to heroku and install the static website cli:
+
+    heroku login
+    heroku plugins:install heroku-cli-static
+
+Create a new Heroku site, and set the buildpack config
+
+    heroku create
+    heroku buildpacks:set https://github.com/hone/heroku-buildpack-static
+
+Initialize the static directory. In our case it's the `styleguide-dist` folder.
+
+    heroku static:init
+
+You should ECHO out something like this:
+
+```
+? Enter the directory of your app: styleguide-dist
+? Drop `.html` extensions from urls? No
+? Path to custom error page from root directory:
+{
+  "root": "styleguide-dist",
+  "clean_urls": false
+}
+```
+
+Now deploy! Scale up a web server, open & enjoy :)
+
+    heroku static:deploy
+    heroku ps:scale web=1
+    heroku open
+
+Here's our same styleguide, running on Heroku => https://arcane-tundra-22168.herokuapp.com/
