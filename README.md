@@ -116,4 +116,32 @@ Now deploy! Scale up a web server, open & enjoy :)
     heroku ps:scale web=1
     heroku open
 
-Here's our same styleguide, running on Heroku => https://arcane-tundra-22168.herokuapp.com/
+Here's our same styleguide, running on Heroku => https://arcane-tundra-22168.herokuapp.com/  
+
+## Visual Regression Testing
+Wraith uses a headless browser to create screenshots of webpages on different environments(or at different moments in time) and then creates a diff of the two images; the affected areas are highlighted in blue. For more information visit [Wraith's homepage](http://bbc-news.github.io/wraith/) or their [Github](https://github.com/BBC-News/wraith) page.
+
+### Install Dependencies
+*You can use PhantomJS or CasperJS for a headless browser. CasperJS will allow you to pass along a selector to take screenshots of a component.
+
+    brew install phantomjs
+    brew install imagemagick
+    brew install casperjs
+
+For Wraith Capture: Given two domains, Wraith will take screenshots of both and compare them. This is good for comparing test and live versions of the same site.
+```
+gulp wraith-capture
+```
+*alias `wraith capture test/configs/capture.yaml`*
+
+For Wraith History: Compare the same domain over time. This is good for checking that your website continues to look the same (especially useful if your site relies on third-party components).
+```
+gulp wraith-history
+```
+*alias `wraith history test/configs/history.yaml`*
+
+For Wraith Latest: Capture new shots to compare to a baseline image.
+```
+gulp wraith-capture
+```
+*alias `wraith latest test/configs/history.yaml`*
