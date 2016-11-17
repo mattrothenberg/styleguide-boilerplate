@@ -118,16 +118,30 @@ Now deploy! Scale up a web server, open & enjoy :)
 
 Here's our same styleguide, running on Heroku => https://arcane-tundra-22168.herokuapp.com/  
 
+---
+
 ## Visual Regression Testing
 Wraith uses a headless browser to create screenshots of webpages on different environments(or at different moments in time) and then creates a diff of the two images; the affected areas are highlighted in blue. For more information visit [Wraith's homepage](http://bbc-news.github.io/wraith/) or their [Github](https://github.com/BBC-News/wraith) page.
 
 ### Install Dependencies
-*You can use PhantomJS or CasperJS for a headless browser. CasperJS will allow you to pass along a selector to take screenshots of a component.
+You can use PhantomJS or CasperJS for a headless browser. CasperJS will allow you to pass along a selector to take screenshots of a component.
 
     brew install phantomjs
     brew install imagemagick
     brew install casperjs
-
+    
+### Setup and Use
+Add Wraith as a dependency to your Gemfile
+```
+bundle
+```
+**If you're capturing images in your local environment make sure the server is running.** 
+To run regression tests against the styleguide:
+```
+gulp
+```
+-
+### Regression Testing Options
 For Wraith Capture: Given two domains, Wraith will take screenshots of both and compare them. This is good for comparing test and live versions of the same site.
 ```
 gulp wraith-capture
@@ -145,3 +159,6 @@ For Wraith Latest: Capture new shots to compare to a baseline image.
 gulp wraith-capture
 ```
 *alias `wraith latest test/configs/history.yaml`*
+
+## Example of a Failing Test
+[![styleguide-visual-regression.png](https://s16.postimg.org/3vrqmbwpx/styleguide_visual_regression.png)](https://postimg.org/image/q7pjfpvtt/)
