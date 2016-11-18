@@ -56,6 +56,18 @@ gulp.task('html', function () {
     .pipe(connect.reload());
 });
 
+gulp.task('wraith-capture', shell.task([
+  'wraith capture test/configs/capture.yaml',
+]))
+
+gulp.task('wraith-history', shell.task([
+  'wraith history test/configs/history.yaml',
+]))
+
+gulp.task('wraith-latest', shell.task([
+  'wraith latest test/configs/history.yaml',
+]))
+
 gulp.task('deploy', shell.task([
     'cf push'
 ]));
