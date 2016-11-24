@@ -25,5 +25,7 @@
     "gulp-shell": "^0.5.2",
     "gulp-sourcemaps": "^1.6.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-bump": "^2.5.1"
+  }
 }

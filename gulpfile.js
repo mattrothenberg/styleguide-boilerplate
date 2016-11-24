@@ -8,6 +8,35 @@ var os = require('os');
 var sass = require('gulp-sass');
 var shell = require('gulp-shell');
 var sourcemaps = require('gulp-sourcemaps');
+var gulp = require('gulp');
+var bump = require('gulp-bump');
+
+gulp.task('bump', function(){
+  var options = {
+    type: 'minor'
+  };
+  gulp.src('./package.json')
+  .pipe(bump(options))
+  .pipe(gulp.dest('./'));
+});
+
+gulp.task('version', function(){
+  gulp.src('./package.json')
+  .pipe(bump({version: '1.2.3'}))
+  .pipe(gulp.dest('./'));
+});
+
+gulp.task('key', function(){
+  gulp.src('./key.json')
+  .pipe(bump({key: 'appversion'}))
+  .pipe(gulp.dest('./'));
+});
+
+gulp.task('patch', function(){
+  gulp.src('./package.json')
+  .pipe(bump())
+  .pipe(gulp.dest('./'));
+});
 
 var browser = os.platform() === 'linux' ? 'google-chrome' : (
   os.platform() === 'darwin' ? 'google chrome' : (
@@ -69,6 +98,7 @@ gulp.task('wraith-latest', shell.task([
 ]))
 
 gulp.task('deploy', shell.task([
+    'gulp patch',
     'cf push'
 ]));
 
