@@ -20,8 +20,8 @@ function fixComponentNavigation() {
 	}
 
 	var doc = document.documentElement;
-	var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);	
-	
+	var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+
 	if (top > 50) {
 		componentNav[0].classList.add('is-fixed')
 	} else {
