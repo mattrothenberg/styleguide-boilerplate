@@ -213,3 +213,7 @@ footer {
 .overflow-x-auto {
   overflow-x: auto;
 }
+
+#version-update {
+  display: none;
+}
