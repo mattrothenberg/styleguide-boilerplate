@@ -30,10 +30,10 @@
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_us">
 
-  
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <!-- Styleguide CSS -->
     <link rel="stylesheet" href="static/css/styleguide.css">
@@ -86,9 +86,17 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12">
+
+            <div id="version-update">
+              <div class="alert alert-danger" role="alert">
+              <strong>Oh snap!</strong> You're currently using an outdated version of styleguide-boilerplate.
+              Download the latest version <a href="https://github.com/mattrothenberg/styleguide-boilerplate">here</a>.
+              </div>
+            </div>
+
             <% if @blocks.length > 1 %>
               <nav class="component-nav" data-gumshoe-header>
-                <ul class="list-inline m-a-0 p-x-3 nowrap overflow-x-auto" data-gumshoe>  
+                <ul class="list-inline m-a-0 p-x-3 nowrap overflow-x-auto" data-gumshoe>
                 <% @blocks.each do |block| %>
                   <% if block[:parent].nil? %>
                   <li class="list-inline-item">
